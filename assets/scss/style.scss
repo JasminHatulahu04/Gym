@@ -1,0 +1,659 @@
+$gold:#ddc75b;
+$black:#000000;
+$white:#ffffff;
+$gray:#939598;
+$black-bg:#000000;
+$gray-bg:#F8F8F8;
+
+
+
+
+//definojme css te perbashket
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    padding: 50px 0px;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.gray-bg{
+    background-color: $gray-bg;
+}
+
+.title{
+
+    text-align: center;
+    p{
+        font-size: 40px;
+        line-height: 2em;
+        margin-bottom: 37px;
+    }
+
+    h2{
+        font-size: 40px;
+        line-height: 4.32625rem;
+        margin-bottom: 37px;
+        color: $black;
+    }
+}
+
+
+
+
+
+//mobile
+@media screen and (max-width: 768px) {
+
+    .container{
+        width: 100%;
+    }
+
+    //mobile menu
+    input[type="checkbox"] {
+    display: none;
+}
+
+    label[for="toggle-menu"]{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: $white;
+
+    i{
+        font-size: 1.5em;
+    }
+}
+
+.toggle-menu:checked + nav{
+    display: block;
+}
+
+
+    header{
+        background-image: url('../image/athlete-in-a-gym-royalty-free-image-1651055064.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+    .pjesa1{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 10px;
+        .fitnes{
+            width: 40%;
+            margin-top: 25px;
+        }
+    }
+}
+    nav{
+            display: none;
+     }
+    
+    ul{
+            margin-top: 25px;
+            display: flex;
+            font-size: 20px;
+            font-weight: 500px;
+            list-style-type: none;
+            flex-direction: column;
+    
+            li{
+                margin: 5px 5px;
+            }
+    
+            a{
+                color: $white;
+            }
+    
+            li a:hover{
+                border-bottom: 1px solid $white;
+                padding-bottom: 10px;
+            }
+           
+     }
+    
+    
+    .pjesa2{
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    padding: 100px 0px;
+    width: 100%;
+    justify-content: center;
+    h2{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    p{
+        display: flex;
+        color: $white;
+        justify-content: center;
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    }
+    
+    .ilustrimi{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    
+    #Informata{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 60px 0px 0px 0px;
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: 30px;
+            color: $gray;
+            padding: 0px 10px 100px 10px;
+            line-height: 40px;
+        }
+    }
+    
+    #antaresite{
+        .container{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 0px 10px 50px 10px;
+
+        }
+
+        .pagesat{
+            border: 2px solid $gold;
+            padding: 10px 40px;
+            text-align: center;
+            width: 100%;
+            height: 500px;
+            margin: 0px 30px 10px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            &:hover{
+                border: 2px solid $black;
+            }
+            
+    
+            &:hover{
+                background-color: $gold;
+                h1{
+                    color: $black;
+                    font-size: 30px;
+                }
+                .qmimet{
+                    border: 2px solid $black;
+                    color: $black;
+                }
+    
+                .fa-solid{
+                    color: $black;
+                    font-size: 45px;
+             }
+        }
+     }
+
+        h1{
+            font-size: 30px;
+            text-align: center;
+            color: #ddc75b;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 10px 0;
+            margin: 0 0 20px 0;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+        p{
+            font-size: 23px;
+            color: #ddc75b;
+            line-height: 40px;
+            padding: 10px;
+            color: $black;
+            
+       
+        }
+    
+        .qmimet{
+            border: 2px solid #ddc75b;
+            text-align: center;
+            position: relative;
+            font-size: 1.64625rem;
+            font-weight: 600;
+            line-height: 18px;
+            padding: 12px;
+            color: #ddc75b;
+        }
+    
+        .fa-solid{
+               color: $gold;
+               font-size: 30px;
+               padding-top: 3px;
+               padding-bottom: 3px;
+        }
+    }
+        
+    #blogu{
+            .container{
+                .blogu{
+                    padding: 10px 10px 70px 10px;
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+    
+                .card{     
+                    span{
+                        font-size: 20px;
+                        color: $gray;
+                    }
+                    p{
+                        font-size: 20px;
+                        padding-bottom: 25px;
+                    }
+                    h2{
+                        font-size: 25px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                    .img{
+                        width: 100%;
+                        height: auto;
+                        padding-bottom: 20px;
+                    }
+                }
+                }
+               }   
+    }
+            
+    footer{
+            .footer{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 50px 10px 50px 15px;
+                justify-content: space-between;
+                background-color: $black;
+        
+                h3{
+                    font-size: 25px;
+                    color: $white;
+                    padding-bottom: 30px;
+                }
+        
+                ul{
+        
+                    list-style-type: none;
+                }
+                li{
+                    line-height: 40px;
+                }
+                a{
+                    color: $white;
+                    font-size: 20px;
+                }
+        
+                p{
+                    font-size: 20px;
+                    color: $white;
+                    line-height: 30px;
+                }
+                span{
+                    color: $white;
+                }
+                
+                .kontaktet{
+                    h3{
+                        padding-top: 50px;
+                    }
+                }
+    
+                .abonimi{
+                    h3{
+                        padding-top: 50px;
+                    }
+                }
+        
+                .email{
+                    border: 1px solid $white;
+                    padding: 10px 10px;
+                    background-color: $black;
+                    color: $white;
+                    width: 250px;
+                    font-size: 20px;
+                }
+        
+                .social{
+                    display: flex;
+                    justify-content: flex-start;  
+                    .media{
+                        border: 1px solid $white;
+                        padding: 20px 20px;
+        
+                        &:hover{
+                            color: $black;
+                            background-color: $white;
+                        }
+                    }
+                }
+        
+                button{
+                    border: 1px solid $white;
+                    padding: 10px 10px;
+                    font-size: 20px;
+        
+                    &:hover{
+                        color: $white;
+                        background-color: $black;
+                    }
+                }
+            }
+    }
+    }
+    
+    
+
+
+//desktop
+@media screen and (min-width: 800px) {
+
+    .container{
+        width: 1320px;
+    }
+    //mobile menu
+    label[for="toggle-menu"],
+    input[type="checkbox"] {
+        display: none;
+    }
+
+
+    header{
+        background-image: url('../image/athlete-in-a-gym-royalty-free-image-1651055064.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+    
+    .pjesa1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        .fitnes{
+            margin-top: 35px;
+        }
+    
+        ul{
+            display: flex;
+            font-size: 25px;
+            list-style-type: none;
+    
+            li{
+                margin: 0px 15px;
+            }
+    
+            a{
+                color: $white;
+            }
+    
+            li a:hover{
+                border-bottom: 1px solid $white;
+                padding-bottom: 10px;
+            }
+           
+        }
+    
+    
+    }
+    
+    }
+    
+    .pjesa2{
+        display: flex;
+        color: $white;
+        justify-content: center;
+        margin-top: 250px;
+    
+    
+    
+        h2{
+            font-size: 50px;
+            font-style: italic;
+            text-align: center;
+        }
+    
+        p{
+            margin-top: 20px;
+            font-size: 40px;
+        }
+    }
+    
+    .ilustrimi{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #Informata{
+        padding: 50px 0px 0px 0px;
+        p{
+            padding-bottom: 100px;
+        }
+    }
+    
+    #antaresite{
+        .container{
+            display: flex;
+            // flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            width: 1500px;
+            padding-bottom: 100px;
+        }
+        .pagesat{
+            border: 2px solid $black;
+            padding: 10px 40px;
+            text-align: center;
+            width: 100%;
+            height: 700px;
+            margin: 0px 30px 0px 30px;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+    
+            &:hover{
+                background-color: $gold;
+    
+                h1{
+                    color: $black;
+                }
+                .qmimet{
+                    border: 2px solid $black;
+                    color: $black;
+                }
+    
+                .fa-solid{
+                    color: $black;
+                    font-size: 50px;
+             }
+        }
+     }
+            
+        
+        
+        h1{
+            font-size: 2.25rem;
+            text-align: center;
+            color: #ddc75b;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 20px 0;
+            margin: 0 0 30px 0;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+        p{
+            font-size: 1.64625rem;
+             font-weight: 600;
+            line-height: 2.14rem;
+             padding: 12px;
+             color: $black;
+            
+       
+        }
+    
+        .qmimet{
+            border: 2px solid #ddc75b;
+            text-align: center;
+            position: relative;
+            font-size: 1.64625rem;
+            font-weight: 600;
+            line-height: 2.14rem;
+            padding: 12px;
+            color: #ddc75b;
+        }
+    
+        .fa-solid{
+               color: $gold;
+               font-size: 50px;
+               padding-top: 3px;
+               padding-bottom: 3px;
+        }
+    }
+    
+    #blogu{
+        .container{
+            .blogu{
+                padding: 50px 0px 70px 0px;
+                display: grid;
+                gap: 30px;
+            .card{     
+                
+                span{
+                    font-size: 20px;
+                    color: $gray;
+                }
+                p{
+                    font-size: 20px;
+                    padding-bottom: 25px;
+                }
+                h2{
+                    font-size: 25px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                .img{
+                    width: 100%;
+                    height: auto;
+                    padding-bottom: 20px;
+                }
+            }
+            }
+           }   
+        }
+        
+    footer{
+        .footer{
+            display: flex;
+            padding: 150px 0px;
+            justify-content: space-evenly;
+            background-color: $black;
+    
+            h3{
+                font-size: 35px;
+                color: $white;
+                padding-bottom: 30px;
+            }
+    
+            ul{
+    
+                list-style-type: none;
+            }
+            li{
+                line-height: 40px;
+            }
+            a{
+                color: $white;
+                font-size: 30px;
+            }
+    
+            p{
+                font-size: 30px;
+                color: $white;
+                line-height: 40px;
+            }
+            span{
+                color: $white;
+            }
+    
+            .email{
+                border: 1px solid $white;
+                padding: 20px 23px;
+                background-color: $black;
+                color: $white;
+                font-size: 20px;
+            }
+    
+            .social{
+                display: flex;
+                justify-content: flex-start;  
+                .media{
+                    border: 1px solid $white;
+                    padding: 20px 20px;
+    
+                    &:hover{
+                        color: $black;
+                        background-color: $white;
+                    }
+                }
+            }
+    
+            button{
+                border: 1px solid $white;
+                padding: 20px 23px;
+                font-size: 20px;
+    
+                &:hover{
+                    color: $white;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+
+
+    #blogu{
+        .blogu{
+            grid-template-columns:repeat(3, 1fr)
+        }
+    }
+
+    }
+
+    
